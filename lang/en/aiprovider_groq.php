@@ -54,3 +54,5 @@ $string['privacy:metadata:aiprovider_groq:prompttext'] = 'The user entered text 
 $string['privacy:metadata:aiprovider_groq:responseformat'] = 'The format of the response. When generating images.';
 $string['userratelimit'] = 'Maximum number of requests per user';
 $string['userratelimit_desc'] = 'The number of requests allowed per hour, per user.';
+$string['testaiconfiguration'] = 'Test AI configuration';
+$string['testaiservices'] = 'Make a test request to the external system to confirm the configuration is correct';

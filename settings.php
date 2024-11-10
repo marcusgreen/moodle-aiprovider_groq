@@ -97,7 +97,7 @@ if ($hassiteconfig) {
     $settings->hide_if('aiprovider_groq/userratelimit', 'aiprovider_groq/enableuserratelimit', 'eq', 0);
 
     $url = new moodle_url('../ai/provider/groq/test_connection.php');
-    $link = html_writer::link($url, get_string('testaiservices', 'tool_aiconnect'));
-    $settings->add(new admin_setting_heading('testaiconfiguration', new lang_string('testaiconfiguration', 'tool_aiconnect'),
+    $link = html_writer::link($url, get_string('testaiservices', 'aiprovider_groq'));
+    $settings->add(new admin_setting_heading('testaiconfiguration', new lang_string('testaiconfiguration', 'aiprovider_groq'),
         new lang_string('testoutgoingmaildetail', 'admin', $link)));
 }
