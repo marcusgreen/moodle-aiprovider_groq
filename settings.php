@@ -17,7 +17,7 @@
 /**
  * Plugin administration pages are defined here.
  *
- * @package ke    aiprovider_groq
+ * @package     aiprovider_groq
  * @copyright   2024 Marcus Green
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

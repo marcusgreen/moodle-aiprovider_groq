@@ -28,7 +28,7 @@ use Psr\Http\Message\UriInterface;
 /**
  * Class process text generation.
  *
- * @package    aiprovider_groq  
+ * @package    aiprovider_groq
  * @copyright  2024 Marcus Green
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

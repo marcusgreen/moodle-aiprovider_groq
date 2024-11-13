@@ -177,6 +177,16 @@ class provider extends \core_ai\provider {
                 'https://api.groq.com/openai/v1/chat/completions',
                 PARAM_URL,
             );
+
+            // Add Temperature.
+            $settings[] = new \admin_setting_configtext(
+                "aiprovider_groq/action_{$actionname}_temperature",
+                new \lang_string("action:{$actionname}:temperature", 'aiprovider_groq'),
+                new \lang_string("action:{$actionname}:temperature_desc", 'aiprovider_groq'),
+                '0.2',
+                PARAM_TEXT,
+                2
+            );
             // Add system instruction settings.
             $settings[] = new \admin_setting_configtextarea(
                 "aiprovider_groq/action_{$actionname}_systeminstruction",

@@ -39,6 +39,10 @@ class process_generate_text extends abstract_processor {
     protected function get_model(): string {
         return get_config('aiprovider_groq', 'action_generate_text_model');
     }
+    #[\Override]
+    protected function get_temperature(): string {
+        return get_config('aiprovider_groq', 'action_generate_text_temperature');
+    }
 
     #[\Override]
     protected function get_system_instruction(): string {
@@ -56,6 +60,7 @@ class process_generate_text extends abstract_processor {
         $requestobj = new \stdClass();
         $requestobj->model = $this->get_model();
         $requestobj->user = $userid;
+        $requestobj->temperature = floatval($this->get_temperature());
 
         // If there is a system string available, use it.
         $systeminstruction = $this->get_system_instruction();
@@ -65,9 +70,9 @@ class process_generate_text extends abstract_processor {
             $systemobj->content = $systeminstruction;
             $requestobj->messages = [$systemobj, $userobj];
         } else {
+
             $requestobj->messages = [$userobj];
         }
-
         return new Request(
             method: 'POST',
             uri: '',

@@ -27,14 +27,21 @@ $string['action:generate_image:model'] = 'AI model';
 $string['action:generate_image:model_desc'] = 'The model used to generate images from user prompts.';
 $string['action:generate_text:endpoint'] = 'API endpoint';
 $string['action:generate_text:model'] = 'AI model';
-$string['action:generate_text:model_desc'] = 'The model used to generate the text response.';
+$string['action:generate_text:model_desc'] = 'The model used to generate the text response.
+A list can be found at <a href=https://console.groq.com/docs/models target="_blank"_>https://console.groq.com/docs/models</a>';
 $string['action:generate_text:systeminstruction'] = 'System instruction';
 $string['action:generate_text:systeminstruction_desc'] = 'This instruction is sent to the AI model along with the user\'s prompt. Editing this instruction is not recommended unless absolutely required.';
+$string['action:generate_text:temperature'] = 'Temperature';
+$string['action:generate_text:temperature_desc'] = 'The randomness or creativity. Low temperature will generate more coherent but predictable text. The range is from 0 to 2.';
+
 $string['action:summarise_text:endpoint'] = 'API endpoint';
 $string['action:summarise_text:model'] = 'AI model';
 $string['action:summarise_text:model_desc'] = 'The model used to summarise the provided text.';
 $string['action:summarise_text:systeminstruction'] = 'System instruction';
 $string['action:summarise_text:systeminstruction_desc'] = 'This instruction is sent to the AI model along with the user\'s prompt. Editing this instruction is not recommended unless absolutely required.';
+$string['action:summarise_text:temperature'] = 'Temperature';
+$string['action:summarise_text:temperature_desc'] = 'The randomness or creativity. Low temperature will generate more coherent but predictable text. The range is from 0 to 2.';
+
 $string['apikey'] = 'Groq API key';
 $string['apikey_desc'] = 'Get a key from your <a href="https://console.groq.com/keys" target="_blank">Groq API keys</a>.';
 $string['enableglobalratelimit'] = 'Set site-wide rate limit';
